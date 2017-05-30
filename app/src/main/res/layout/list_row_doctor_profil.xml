@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateFromHintTextView"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:text="From: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dateFromTextView"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/dateFromHintTextView"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dateToHintTextView"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/dateFromTextView"
+            android:text="To: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dateToTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/dateToHintTextView"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

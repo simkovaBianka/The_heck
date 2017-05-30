@@ -1,0 +1,17 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09000000"
+    tools:context="pro1a.ics.upjs.sk.the_heck.fragment.AppointmentFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/appointmentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#09000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="3dp"
+        android:listSelector="@drawable/list_row_selector" />
+
+</android.support.v7.widget.CardView>

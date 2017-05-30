@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:doctorCardView="http://schemas.android.com/tools"
+    android:id="@+id/doctorCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    doctorCardView:cardElevation="1.5dp"
+    doctorCardView:cardMaxElevation="1.5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_row_selector"
+        android:padding="4dp">
+
+
+        <ImageView
+            android:id="@+id/iconTextView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp" />
+
+
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iconTextView"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iconTextView"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailTextView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iconTextView"
+            android:textSize="@dimen/name" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="20.5dp"
+            android:layout_height="20.5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_cross" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

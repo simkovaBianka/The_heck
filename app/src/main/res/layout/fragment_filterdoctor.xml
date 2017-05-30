@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#09000000">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:id="@+id/nestedRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/background_layout"
+                android:elevation="5dp">
+
+                <TextView
+                    android:id="@+id/firstnameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="First name"
+                    android:textColor="#78000000" />
+
+                <EditText
+                    android:id="@+id/doctorFirstNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/firstnameTextView"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="text"
+                    android:textColor="#4e655b"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/lastNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctorFirstNameEditText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Last name"
+                    android:textColor="#78000000" />
+
+                <EditText
+                    android:id="@+id/doctorLastNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/lastNameTextView"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="text"
+                    android:textColor="#4e655b"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/cityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctorLastNameEditText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ambulance (city)"
+                    android:textColor="#78000000" />
+
+                <EditText
+                    android:id="@+id/cityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/cityTextView"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="text"
+                    android:textColor="#4e655b"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/detailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cityEditText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Specializaion (required)"
+                    android:textColor="#78000000" />
+
+                <Spinner
+                    android:id="@+id/specialization_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/detailTextView"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border" />
+
+                <Button
+                    android:id="@+id/setDateButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/specialization_spinner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_calendar"
+                    android:textColor="#c5dbd9" />
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/specialization_spinner"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0.07"
+                    android:text="Search date from"
+                    android:textColor="#78000000" />
+
+                <TextView
+                    android:id="@+id/dateFromText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/specialization_spinner"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/dateTextView"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textAlignment="center"
+                    android:textColor="#4e655b"
+                    android:textColorHint="#45000000"
+                    android:textSize="14dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/dateToTextView"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTextView"
+                    android:layout_marginLeft="80dp"
+                    android:text="Search date to"
+                    android:textColor="#78000000" />
+
+                <TextView
+                    android:id="@+id/dateToText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateFromText"
+                    android:layout_toRightOf="@+id/dateToTextView"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textAlignment="center"
+                    android:textColor="#4e655b"
+                    android:textColorHint="#45000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/showDoctorsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nestedRelativeLayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border_general"
+                android:drawableRight="@drawable/ic_search"
+                android:elevation="10dp"
+                android:text="Search doctors"
+                android:textAllCaps="false"
+                android:textColor="#52000000"
+                android:textSize="15dp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/showDoctorsTextView"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#28ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_firstname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_username_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/nameTextView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="First name"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_lastname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_username_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/lastNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="150dp"
+                    android:hint="Last name"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_lastname_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_email_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_confirmpassword_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_password_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Password again"
+                    android:inputType="textPassword"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_confirmpassword_input"
+                android:textColorHint="#78ffffff">>
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/hint_phone"
+                    android:inputType="phone"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_phone_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/addressEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_city_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_address_input"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/cityEditText"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_postalcode_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_address_input"
+                android:layout_marginLeft="150dp"
+                android:textColorHint="#78ffffff">
+
+                <EditText
+                    android:id="@+id/postalCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Postal code"
+                    android:inputType="number"
+                    android:padding="6dp"
+                    android:textColor="#78ffffff"
+                    android:textColorHint="@color/input_login_hint"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/register_city_input"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_border_login"
+                android:text="@string/btn_register"
+                android:textColor="#98ffffff" />
+
+            <Button
+                android:id="@+id/linkToLoginScreenButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registerButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@null"
+                android:onClick="linkToLogin"
+                android:text="@string/btn_link_to_login"
+                android:textAllCaps="false"
+                android:textColor="#78ffffff"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
